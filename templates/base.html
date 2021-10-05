@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="{{url_for('static', filename='main.css')}}" rel="stylesheet">
+        <title>Apsal Portfolio</title>
+    </head>
+    <body>
+        <nav class="navbar" id="nav">
+            <div class="navber1">
+                <a href="{{url_for('index')}}" class="home"><button>Home</button></a>
+                <a href="{{url_for('projects')}}" class="projects"><button>Projects</button></a>
+                <a href="{{url_for('about')}}" class="about"><button>About</button></a>
+            </div>
+            <div class="navbar2">
+                <a href="http://www.twitter.com" class="twitter logo"><img src="static/twitter1.png" alt="twitter"></a>
+                <a href="http://www.youtube.com" class="youtube logo"><img src="static/youtube.png" alt="youtube"></a>
+                <a href="http://www.linkedin.com/in/mohamed-apsal-b7423120a" class="linkedin logo"><img src="static/linkedin.png" alt="linkedin"></a>
+            </div>
+        </nav>
+        {% block a %}
+        {% endblock %} 
+    </body>
+</html>
