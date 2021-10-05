@@ -1,0 +1,24 @@
+{% extends ('base.html') %}
+
+{% block a %}
+<div class="welcome-box" id="box">
+        <div class="first-box" id="welcome-box">
+            <p class="hello">Hello!</p><br>
+            <p id="details">I'm Mohamed Apsal,<br>
+            a frontend developer<br>
+            specializing in new <br>modern website creation <br>at Angular / Flask.</p>
+        </div>
+        <div class="image-box" id="image-box">
+            <img src="{{url_for('static',filename='KMA.jpg')}}">
+        </div>
+    </div>
+    <div class="skills">
+        <span class="title">Technical Skills</span>
+        <ul class="skills-ul">
+            <li class="skills-li">Python & Flask</li>
+            <li class="skills-li">Angular</li>
+            <li class="skills-li">HTML, CSS & JavaScript</li>
+            <li class="skills-li">Technical Support</li>
+        </ul>
+    </div>
+{% endblock %}
